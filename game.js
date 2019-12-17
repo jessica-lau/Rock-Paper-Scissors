@@ -1,4 +1,4 @@
-const choices = ["Lapis", "Papyrus", "Scalpellus"];
+const choices = ["Rock", "Paper", "Scissors"];
 
 const computerChooses = () => {
     return Math.floor(Math.random() * choices.length);
@@ -61,6 +61,6 @@ const playerChooses = (event) => {
     return displayWinner();
 }
 
-document.querySelector('#Lapis').onclick = playerChooses;
-document.querySelector('#Papyrus').onclick = playerChooses;
-document.querySelector('#Scalpellus').onclick = playerChooses;
+document.querySelector('#Rock').onclick = playerChooses;
+document.querySelector('#Paper').onclick = playerChooses;
+document.querySelector('#Scissors').onclick = playerChooses;
